@@ -1,0 +1,2 @@
+Hello from index js
+ This is a new line added to the file.
