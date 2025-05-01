@@ -1,0 +1,142 @@
+
+Gen Z Git Cheat Sheet — The Real Deal
+=======================================
+
+1. Adding and Tracking Files/Folders
+-------------------------------------
+- Stage everything in the current directory:
+  git add .
+  
+- Stage a specific folder:
+  git add foldername/
+  
+- Stage a specific file:
+  git add file.js
+
+
+2. Committing Changes
+---------------------
+- Commit your staged changes with a message:
+  git commit -m "your message"
+
+
+3. Pushing to GitHub
+--------------------
+- Push your commits to the main branch (or your current branch):
+  git push origin main
+
+
+4. Pulling Changes
+------------------
+- Update your local repo with latest changes from GitHub:
+  git pull origin main
+
+
+5. Checking Status
+------------------
+- See what’s changed and what’s staged:
+  git status
+
+
+6. Viewing Commit History
+-------------------------
+- Get a quick view of recent commits:
+  git log --oneline
+
+
+7. Removing Files/Folders
+-------------------------
+- Delete a file from both Git and your computer:
+  git rm file.js
+  
+- Delete a folder (and its contents) from both Git and your machine:
+  git rm -r foldername/
+  
+- Untrack a file (remove it from Git) but keep it locally:
+  git rm --cached file.js
+  
+- Untrack a folder but keep it on your system:
+  git rm -r --cached folder/
+
+
+8. Renaming Files/Folders
+-------------------------
+- Rename a file or folder so Git knows:
+  git mv old-name new-name
+
+
+9. Undoing Mistakes
+-------------------
+- Undo changes in a file (revert to last committed state):
+  git restore file.js
+  
+- Unstage a file you added:
+  git reset HEAD file.js
+
+
+10. Working with Branches
+--------------------------
+- List all local branches:
+  git branch
+  
+- Create a new branch and switch to it:
+  git checkout -b new-branch
+  
+- Switch to an existing branch:
+  git checkout branch-name
+  
+- Delete a branch locally:
+  git branch -d branch-name
+
+
+11. Merging Branches
+--------------------
+- Merge another branch into your current branch:
+  git merge branch-name
+  
+- If there are conflicts, Git will let you know; resolve them, then commit.
+
+
+12. Stashing Changes
+--------------------
+- Temporarily save changes you’re not ready to commit:
+  git stash
+  
+- Apply stashed changes:
+  git stash apply
+  
+- List stashed states:
+  git stash list
+  
+- Clear all stashed states:
+  git stash clear
+
+
+13. Viewing Differences
+------------------------
+- See changes between your working directory and the last commit:
+  git diff
+  
+- See changes between staged files and the last commit:
+  git diff --cached
+
+
+14. Reverting Commits
+---------------------
+- Revert a commit by creating a new commit that undoes the changes:
+  git revert <commit-hash>
+
+
+15. Cherry-picking Commits
+--------------------------
+- Apply changes from a specific commit onto your current branch:
+  git cherry-pick <commit-hash>
+
+
+Pro Tips:
+---------
+- Git tracks files, not folders. So always stage changes using git add and git rm when you rename or delete folders.
+- Use git status frequently to see what’s going on.
+- Always double-check before pushing to avoid weird repo states.
+
+Keep this cheat sheet handy when you're deep in code and need that quick reference!
